@@ -704,8 +704,8 @@ Projects
 .project-stack {
   margin-bottom: 1rem;
 }
-.project-stack span,
-.about-stack span {
+.project-stack li,
+.about-stack li {
   display: inline-block;
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
@@ -715,9 +715,10 @@ Projects
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
+  list-style: none;
 }
-.about-stack span {
-  margin-top: 0.5rem;
+.about-stack li {
+  margin-top: 0;
 }
 .project-icon {
   color: var(--clr-primary-5);
