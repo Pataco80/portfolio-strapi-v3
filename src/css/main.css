@@ -674,7 +674,8 @@ Projects
 .project:hover .project-img::after {
   opacity: 0;
 }
-.project-info {
+.project-info,
+.project-template-article {
   background: var(--clr-white);
   padding: 1rem 2rem;
   border-bottom-left-radius: var(--radius);
@@ -752,7 +753,8 @@ Projects
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
   }
-  .project-info {
+  .project-info,
+  .project-template-article {
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
 
@@ -833,17 +835,38 @@ Project Template Page
 ===============
 */
 .project-template-page {
-  padding-top: 3rem;
+  padding-top: 5rem;
   text-align: center;
+  place-items: center;
 }
-.project-template-page h2 {
-  text-transform: uppercase;
+.project-template-article {
+  padding: 3rem 2rem;
+  max-width: 992px;
 }
-.project-template-page p {
-  max-width: 35em;
-  margin: 0 auto;
-  margin-top: 2rem;
+.project-template-article .project-img {
+  margin-bottom: 2rem;
 }
+.project-template-article p {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 575px) {
+  .project-template-article .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  .project-template-article {
+    padding: 3rem;
+  }
+  .project-article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 /*
 ===============
 About Page
