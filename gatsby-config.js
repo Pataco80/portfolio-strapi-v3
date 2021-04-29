@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'WebDev Portfolio',
-    description: 'Awesome WebDev Portfolio built with Gatsby and Strapi',
+    title: `WebDev Portfolio`,
+    description: `Awesome WebDev Portfolio built with Gatsby and Strapi`,
     titleTemplate: `%s | WebDev Portfolio`,
-    url: 'https://portfolio-strapi.netlify.app',
-    twitterUsername: '@Pataco80',
+    siteUrl: `https://temp-portfolio-strapi.netlify.app`,
+    twitterUsername: `@Pataco80`,
     image: `/social-web-dev.png`,
   },
   plugins: [
