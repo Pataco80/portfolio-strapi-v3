@@ -2,8 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
+
+// Import components from Gatsby and plugins Gatsby
 import { useStaticQuery, graphql } from 'gatsby'
 
+// GraphQl Queries
 const query = graphql`
   query SEO {
     site {
@@ -19,7 +22,9 @@ const query = graphql`
   }
 `
 
+// Component
 const SEO = ({ title, description, image, article }) => {
+  // Component Variables and functions
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -39,6 +44,7 @@ const SEO = ({ title, description, image, article }) => {
     url: `${siteUrl}${pathname}`,
   }
 
+  // Render Component
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name='description' content={seo.description} />
@@ -75,6 +81,7 @@ const SEO = ({ title, description, image, article }) => {
 
 export default SEO
 
+// PropTypes
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,

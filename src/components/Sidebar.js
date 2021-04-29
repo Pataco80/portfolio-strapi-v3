@@ -1,9 +1,18 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
+import { Link } from 'gatsby'
+
+// Import Components for App
+import { FaTimes } from 'react-icons/fa'
+
+// Import Data
 import links from '../constants/links'
 import socialLinks from '../constants/social_links'
-import { Link } from 'gatsby'
-import { FaTimes } from 'react-icons/fa'
+
+// Component
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  // Render Component
   return (
     <aside className={isOpen ? 'sidebar show-sidebar' : 'sidebar'}>
       <button className='close-btn' onClick={toggleSidebar}>

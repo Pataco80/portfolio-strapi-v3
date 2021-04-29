@@ -1,8 +1,14 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
 import { Link } from 'gatsby'
+
+// Import Components for App
 import Seo from '../components/Seo'
 
+// Component
 const Error = () => {
+  // Render Component
   return (
     <>
       <Seo title='Error 404' />

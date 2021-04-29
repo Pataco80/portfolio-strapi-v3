@@ -1,9 +1,18 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
+import { Link } from 'gatsby'
+
+// Import Components for App
 import logo from '../images/logo.svg'
 import { FaAlignRight } from 'react-icons/fa'
+
+// Import Data
 import pageLinks from '../constants/links'
-import { Link } from 'gatsby'
+
+// Component
 const Navbar = ({ toggleSidebar }) => {
+  // Render Component
   return (
     <nav className='navbar'>
       <div className='nav-center'>

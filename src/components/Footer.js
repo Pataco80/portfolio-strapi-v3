@@ -1,6 +1,11 @@
 import React from 'react'
+
+// Import Data
 import socialLinks from '../constants/social_links'
+
+// Component
 const Footer = () => {
+  // Render Component
   return (
     <footer className='footer'>
       <div>

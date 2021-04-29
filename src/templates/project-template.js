@@ -1,9 +1,14 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
 import { graphql, Link } from 'gatsby'
+
+// Import Components for App
 import Title from '../components/Title'
 import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 import Seo from '../components/Seo'
 
+// GraphQl Queries
 export const query = graphql`
   query getProject($slug: String!) {
     project: strapiProjects(slug: { eq: $slug }) {
@@ -23,8 +28,12 @@ export const query = graphql`
   }
 `
 
+// Component
 const ProjectTemplate = ({ data }) => {
+  // Component Variables and functions
   const { title, description, stack, github, url, image } = data.project
+
+  // Render Component
   return (
     <>
       <Seo

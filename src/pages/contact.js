@@ -1,6 +1,11 @@
 import React from 'react'
+
+// Import Components for App
 import Seo from '../components/Seo'
+
+// Component
 const contact = () => {
+  // Render Component
   return (
     <>
       <Seo title='Contact Us' />

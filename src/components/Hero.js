@@ -1,10 +1,15 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
 import { Link } from 'gatsby'
-import socialLinks from '../constants/social_links'
-import heroImg from '../images/hero.svg'
 import { StaticImage } from 'gatsby-plugin-image'
 
+// Import Data
+import socialLinks from '../constants/social_links'
+
+// Component
 const Hero = () => {
+  // Render Component
   return (
     <header className='hero'>
       <section className='section-center hero-center'>

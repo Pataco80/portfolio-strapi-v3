@@ -1,7 +1,14 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
 import Title from './Title'
+
+// Import Components for App
 import services from '../constants/services'
+
+// Component
 const Services = () => {
+  // Render Component
   return (
     <section className='section bg-grey'>
       <div className='section-title'>

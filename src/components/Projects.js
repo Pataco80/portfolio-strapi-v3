@@ -1,10 +1,18 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
+import { Link } from 'gatsby'
+
+// Import Components for App
 import Title from './Title'
 import Project from './Project'
-import { Link } from 'gatsby'
+
+// Component
 const Projects = (props) => {
+  // Component Variables and functions
   const { title, showLink, projects } = props
 
+  // Render Component
   return (
     <section className='section projects'>
       <div className='section-title'>

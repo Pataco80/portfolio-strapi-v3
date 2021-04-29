@@ -1,9 +1,15 @@
 import React from 'react'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
-import { Link } from 'gatsby'
 
+// Import components from Gatsby and plugins Gatsby
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+// Import Components for App
+import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
+
+// Component
 const Project = (props) => {
+  // Component Variables and functions
   const {
     id,
     index,
@@ -17,6 +23,7 @@ const Project = (props) => {
   } = props
   const imgPath = getImage(image)
 
+  // Render Component
   return (
     <article Key={id} className='project'>
       <GatsbyImage image={imgPath} alt={title} className='project-img' />

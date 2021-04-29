@@ -37,8 +37,8 @@ module.exports = {
         name: `gatsby-strapi-portfolio-project`,
         short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#fff`,
+        theme_color: `#2caeba`,
         display: `standalone`,
         icon: './src/images/favicons/android-chrome-512x512.png',
         icons: [

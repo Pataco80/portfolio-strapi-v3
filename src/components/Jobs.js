@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
+
+// Import components from Gatsby and plugins Gatsby
+import { graphql, useStaticQuery, Link } from 'gatsby'
+
+// Import Components for App
 import Title from './Title'
 import { FaAngleDoubleRight } from 'react-icons/fa'
-import { graphql, useStaticQuery } from 'gatsby'
-import { Link } from 'gatsby'
 
+// GraphQl Queries
 const getJobs = graphql`
   {
     allStrapiJob(sort: { fields: created_at, order: DESC }) {
@@ -22,13 +26,17 @@ const getJobs = graphql`
   }
 `
 
+// Component
 const Jobs = () => {
+  // Component Variables and functions
   const data = useStaticQuery(getJobs)
   const [value, setValue] = useState(0)
   const {
     allStrapiJob: { nodes: job },
   } = data
   const { id, position, compagny, date, job_description } = job[value]
+
+  // Render Component
   return (
     <section className='section jobs'>
       <div className='section-title'>

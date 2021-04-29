@@ -1,8 +1,13 @@
 import React from 'react'
+
+// Import components from Gatsby and plugins Gatsby
 import { graphql, useStaticQuery } from 'gatsby'
+
+// Import Components for App
 import Title from '../components/Title'
 import Seo from '../components/Seo'
 
+// GraphQl Queries
 export const getAbout = graphql`
   {
     strapiAbout {
@@ -19,10 +24,14 @@ export const getAbout = graphql`
   }
 `
 
+// Component
 const About = () => {
+  // Component Variables and functions
   const data = useStaticQuery(getAbout)
   const about = data.strapiAbout
   const { title, description, image, stack } = about
+
+  // Render Component
   return (
     <>
       <Seo title='About Me' />
