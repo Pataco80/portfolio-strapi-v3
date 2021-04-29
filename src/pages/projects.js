@@ -35,9 +35,12 @@ const ProjectsPage = ({ data }) => {
     projects: { nodes: projects },
   } = data
   return (
-    <main className='projects-page'>
-      <Projects title='All Projects' projects={projects} />
-    </main>
+    <>
+      <Seo title='All Projects' />
+      <main className='projects-page'>
+        <Projects title='All Projects' projects={projects} />
+      </main>
+    </>
   )
 }
 
